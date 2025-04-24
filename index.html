@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sugar Defender - Limited Time Offer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f0f4f8;
+      color: #1e293b;
+    }
+    header {
+      background-color: #0f172a;
+      color: #fff;
+      text-align: center;
+      padding: 16px;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .container {
+      max-width: 960px;
+      margin: 40px auto;
+      background-color: white;
+      padding: 40px 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+      text-align: center;
+    }
+    h1 {
+      font-size: 36px;
+      color: #0f172a;
+      margin-bottom: 20px;
+      font-weight: 800;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin-bottom: 26px;
+    }
+    .highlight {
+      color: #dc2626;
+      font-weight: bold;
+    }
+    .product-img {
+      max-width: 320px;
+      margin: 30px auto;
+      display: block;
+      border-radius: 12px;
+      cursor: zoom-in;
+      transition: transform 0.3s ease;
+    }
+    .product-img:hover {
+      transform: scale(1.03);
+    }
+    .cta-btn {
+      background-color: #10b981;
+      color: white;
+      font-size: 24px;
+      font-weight: 800;
+      padding: 20px 48px;
+      border-radius: 12px;
+      text-decoration: none;
+      display: inline-block;
+      animation: pulse 1.6s infinite;
+      box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.2);
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+    .cta-btn:hover {
+      background-color: #059669;
+      transform: scale(1.08);
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.07); }
+      100% { transform: scale(1); }
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      color: #888;
+      margin-top: 50px;
+      padding: 24px;
+    }
+    .overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.85);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      display: none;
+    }
+    .overlay img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17027592099"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17027592099');
+  </script>
+</head>
+<body>
+
+  <header>
+    ✅ Official Site – Exclusive Offer on Sugar Defender. Limited Stock – Act Fast!
+  </header>
+
+  <div class="container">
+    <h1>Control Blood Sugar & Feel Energized Naturally</h1>
+    <p><span class="highlight">Sugar Defender</span> is a premium blend of herbs and nutrients designed to support healthy blood sugar levels, energy, and metabolism – all with fast U.S. shipping and a satisfaction guarantee.</p>
+
+    <img class="product-img" src="./img.jpeg" alt="Sugar Defender Bottle" id="zoomable" />
+
+    <p><strong>Don’t wait!</strong> This limited-time discount is only available through this page. Protect your health and feel the results fast.</p>
+
+    <a class="cta-btn" href="https://sugardefender24.com/d/order-now.php#aff=marloonbfss" target="_blank">
+      🔥 CLAIM MY EXCLUSIVE DISCOUNT NOW
+    </a>
+  </div>
+
+  <div class="overlay" id="overlay">
+    <img src="./image.png" alt="Zoomed Sugar Defender" />
+  </div>
+
+  <footer>
+    &copy; 2025 Sugar Defender™ – All Rights Reserved
+  </footer>
+
+  <script>
+    const zoomable = document.getElementById('zoomable');
+    const overlay = document.getElementById('overlay');
+
+    zoomable.addEventListener('click', () => {
+      overlay.style.display = 'flex';
+    });
+
+    overlay.addEventListener('click', () => {
+      overlay.style.display = 'none';
+    });
+  </script>
+
+</body>
+</html>
